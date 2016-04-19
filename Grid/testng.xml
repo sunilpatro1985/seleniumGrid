@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Grid" parallel="tests" thread-count="3">
+<test name="Test1">
+      <parameter name="browser" value="firefox" />
+      <parameter name="remoteurl" value="http://10.112.70.32:5551" />
+      <classes>
+          <class name="hubnode.Grid" />
+      </classes>
+</test>
+<test name="Test2">
+      <parameter name="browser" value="chrome" />
+      <parameter name="remoteurl" value="http://10.112.70.32:5551" />
+      <classes>
+          <class name="hubnode.Grid" />
+      </classes>
+</test>
+<test name="Test3">
+      <parameter name="browser" value="ie" />
+      <parameter name="remoteurl" value="http://10.223.204.105:5552" />
+      <classes>
+          <class name="hubnode.Grid" />
+      </classes>
+</test>
+</suite>
+
+
